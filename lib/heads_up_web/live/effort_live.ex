@@ -29,8 +29,7 @@ defmodule HeadsUpWeb.EffortLive do
     """
   end
 
-def handle_event("add", %{"quantity" => quantity}, socket) do
+  def handle_event("add", %{"quantity" => quantity}, socket) do
     {:noreply, update(socket, :responders, &(&1 + String.to_integer(quantity)))}
   end
-
 end
