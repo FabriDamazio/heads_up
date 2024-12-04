@@ -85,6 +85,7 @@ defmodule HeadsUpWeb do
       import Phoenix.HTML
       # Core UI components and translation
       import HeadsUpWeb.CoreComponents
+      import HeadsUpWeb.CustomComponents
       import HeadsUpWeb.Gettext
 
       # Shortcut for generating JS commands
